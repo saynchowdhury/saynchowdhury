@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <style>
+    @keyframes agent-walk-right {
+      0% { transform: translateX(-80px); }
+      100% { transform: translateX(880px); }
+    }
+    @keyframes agent-walk-left {
+      0% { transform: translateX(880px); }
+      100% { transform: translateX(-80px); }
+    }
+    @keyframes agent-walk-right-slow {
+      0% { transform: translateX(-120px); }
+      100% { transform: translateX(920px); }
+    }
+    @keyframes agent-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+    @keyframes data-stream {
+      0% { opacity: 0; transform: translateY(10px); }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { opacity: 0; transform: translateY(-10px); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes orbit {
+      0% { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+    }
+    .bg { fill: #0a0a0a; }
+    .green { fill: #00ff41; }
+    .green-dim { fill: #00ff41; opacity: 0.3; }
+    .green-bright { fill: #33ff66; filter: drop-shadow(0 0 4px rgba(0, 255, 65, 0.8)); }
+    .agent-body { fill: #00ff41; filter: drop-shadow(0 0 3px rgba(0, 255, 65, 0.6)); }
+    .agent-eye { fill: #0a0a0a; }
+    .mono { 
+      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+      fill: #00ff41;
+      font-size: 10px;
+    }
+    .mono-bright {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+      fill: #00ff41;
+      font-size: 11px;
+      font-weight: 700;
+      filter: drop-shadow(0 0 4px rgba(0, 255, 65, 0.6));
+    }
+    .title-text {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+      fill: #00ff41;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      filter: drop-shadow(0 0 8px rgba(0, 255, 65, 0.5));
+    }
+    .subtitle-text {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+      fill: #00ff41;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      opacity: 0.8;
+    }
+    .agent-r1 { animation: agent-walk-right 12s linear infinite; }
+    .agent-r2 { animation: agent-walk-right-slow 18s linear infinite; animation-delay: -4s; }
+    .agent-r3 { animation: agent-walk-right 15s linear infinite; animation-delay: -8s; }
+    .agent-l1 { animation: agent-walk-left 14s linear infinite; animation-delay: -2s; }
+    .agent-l2 { animation: agent-walk-left 20s linear infinite; animation-delay: -10s; }
+    .agent-l3 { animation: agent-walk-left 16s linear infinite; animation-delay: -6s; }
+    .float { animation: agent-float 2s ease-in-out infinite; }
+    .float-delay { animation: agent-float 2.5s ease-in-out infinite; animation-delay: -1s; }
+    .pulse { animation: pulse-glow 2s ease-in-out infinite; }
+    .pulse-delay { animation: pulse-glow 2s ease-in-out infinite; animation-delay: -1s; }
+    .stream1 { animation: data-stream 3s ease-in-out infinite; }
+    .stream2 { animation: data-stream 3s ease-in-out infinite; animation-delay: -1s; }
+    .stream3 { animation: data-stream 3s ease-in-out infinite; animation-delay: -2s; }
+    .cursor-blink { animation: blink 1s step-end infinite; }
+    .orbiter { animation: orbit 6s linear infinite; }
+    .orbiter2 { animation: orbit 8s linear infinite reverse; }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="800" height="200" rx="8"/>
+  <rect x="0" y="0" width="800" height="200" rx="8" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="50" x2="800" y2="50" stroke="#00ff41" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="100" x2="800" y2="100" stroke="#00ff41" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#00ff41" stroke-width="0.3" opacity="0.1"/>
+  <line x1="200" y1="0" x2="200" y2="200" stroke="#00ff41" stroke-width="0.3" opacity="0.1"/>
+  <line x1="400" y1="0" x2="400" y2="200" stroke="#00ff41" stroke-width="0.3" opacity="0.1"/>
+  <line x1="600" y1="0" x2="600" y2="200" stroke="#00ff41" stroke-width="0.3" opacity="0.1"/>
+
+  <!-- Central text -->
+  <text class="title-text" x="400" y="85" text-anchor="middle">NO PLAN B</text>
+  <text class="subtitle-text" x="400" y="115" text-anchor="middle">I WILL MAKE THIS HAPPEN</text>
+  
+  <!-- Decorative brackets -->
+  <text class="mono-bright pulse" x="140" y="100" text-anchor="middle">[</text>
+  <text class="mono-bright pulse-delay" x="660" y="100" text-anchor="middle">]</text>
+
+  <!-- Floating data streams on left -->
+  <text class="mono stream1" x="30" y="30">0xAGENT_01</text>
+  <text class="mono stream2" x="20" y="60">EXECUTING...</text>
+  <text class="mono stream3" x="40" y="170">MESH_ACTIVE</text>
+
+  <!-- Floating data streams on right -->
+  <text class="mono stream2" x="680" y="40">PROTOCOL_7</text>
+  <text class="mono stream3" x="690" y="75">SWARM:ON</text>
+  <text class="mono stream1" x="670" y="165">SIGNAL:HIGH</text>
+
+  <!-- AGENT 1: Walking right, top row - simple robot figure -->
+  <g class="agent-r1">
+    <g class="float" transform="translate(0, 25)">
+      <!-- Head -->
+      <rect class="agent-body" x="0" y="0" width="14" height="12" rx="3"/>
+      <rect class="agent-eye" x="3" y="4" width="3" height="3" rx="1"/>
+      <rect class="agent-eye" x="9" y="4" width="3" height="3" rx="1"/>
+      <!-- Antenna -->
+      <line x1="7" y1="0" x2="7" y2="-6" stroke="#00ff41" stroke-width="1.5"/>
+      <circle class="green-bright pulse" cx="7" cy="-8" r="2"/>
+      <!-- Body -->
+      <rect class="agent-body" x="1" y="14" width="12" height="14" rx="2"/>
+      <!-- Legs -->
+      <rect class="agent-body" x="2" y="30" width="4" height="8" rx="1"/>
+      <rect class="agent-body" x="8" y="30" width="4" height="8" rx="1"/>
+      <!-- Label -->
+      <text class="mono" x="7" y="52" text-anchor="middle" font-size="7">AG-01</text>
+    </g>
+  </g>
+
+  <!-- AGENT 2: Walking left, middle row -->
+  <g class="agent-l1">
+    <g class="float-delay" transform="translate(0, 75)">
+      <rect class="agent-body" x="0" y="0" width="14" height="12" rx="3"/>
+      <rect class="agent-eye" x="3" y="4" width="3" height="3" rx="1"/>
+      <rect class="agent-eye" x="9" y="4" width="3" height="3" rx="1"/>
+      <line x1="7" y1="0" x2="7" y2="-6" stroke="#00ff41" stroke-width="1.5"/>
+      <circle class="green-bright pulse-delay" cx="7" cy="-8" r="2"/>
+      <rect class="agent-body" x="1" y="14" width="12" height="14" rx="2"/>
+      <rect class="agent-body" x="2" y="30" width="4" height="8" rx="1"/>
+      <rect class="agent-body" x="8" y="30" width="4" height="8" rx="1"/>
+      <text class="mono" x="7" y="52" text-anchor="middle" font-size="7">AG-02</text>
+    </g>
+  </g>
+
+  <!-- AGENT 3: Walking right slowly, bottom row -->
+  <g class="agent-r2">
+    <g class="float" transform="translate(0, 130)">
+      <rect class="agent-body" x="0" y="0" width="14" height="12" rx="3"/>
+      <rect class="agent-eye" x="3" y="4" width="3" height="3" rx="1"/>
+      <rect class="agent-eye" x="9" y="4" width="3" height="3" rx="1"/>
+      <line x1="7" y1="0" x2="7" y2="-6" stroke="#00ff41" stroke-width="1.5"/>
+      <circle class="green-bright pulse" cx="7" cy="-8" r="2"/>
+      <rect class="agent-body" x="1" y="14" width="12" height="14" rx="2"/>
+      <rect class="agent-body" x="2" y="30" width="4" height="8" rx="1"/>
+      <rect class="agent-body" x="8" y="30" width="4" height="8" rx="1"/>
+      <text class="mono" x="7" y="52" text-anchor="middle" font-size="7">AG-03</text>
+    </g>
+  </g>
+
+  <!-- AGENT 4: Walking left, top-right -->
+  <g class="agent-l2">
+    <g class="float-delay" transform="translate(0, 15)">
+      <rect class="agent-body" x="0" y="0" width="12" height="10" rx="2"/>
+      <rect class="agent-eye" x="2" y="3" width="2" height="2" rx="1"/>
+      <rect class="agent-eye" x="7" y="3" width="2" height="2" rx="1"/>
+      <line x1="6" y1="0" x2="6" y2="-5" stroke="#00ff41" stroke-width="1"/>
+      <circle class="green-bright pulse-delay" cx="6" cy="-7" r="1.5"/>
+      <rect class="agent-body" x="1" y="12" width="10" height="12" rx="2"/>
+      <rect class="agent-body" x="1" y="26" width="4" height="6" rx="1"/>
+      <rect class="agent-body" x="7" y="26" width="4" height="6" rx="1"/>
+      <text class="mono" x="6" y="44" text-anchor="middle" font-size="6">AG-04</text>
+    </g>
+  </g>
+
+  <!-- AGENT 5: Walking right, bottom -->
+  <g class="agent-r3">
+    <g class="float" transform="translate(0, 145)">
+      <rect class="agent-body" x="0" y="0" width="12" height="10" rx="2"/>
+      <rect class="agent-eye" x="2" y="3" width="2" height="2" rx="1"/>
+      <rect class="agent-eye" x="7" y="3" width="2" height="2" rx="1"/>
+      <line x1="6" y1="0" x2="6" y2="-5" stroke="#00ff41" stroke-width="1"/>
+      <circle class="green-bright pulse" cx="6" cy="-7" r="1.5"/>
+      <rect class="agent-body" x="1" y="12" width="10" height="12" rx="2"/>
+      <rect class="agent-body" x="1" y="26" width="4" height="6" rx="1"/>
+      <rect class="agent-body" x="7" y="26" width="4" height="6" rx="1"/>
+      <text class="mono" x="6" y="44" text-anchor="middle" font-size="6">AG-05</text>
+    </g>
+  </g>
+
+  <!-- AGENT 6: Walking left slowly -->
+  <g class="agent-l3">
+    <g class="float-delay" transform="translate(0, 90)">
+      <rect class="agent-body" x="0" y="0" width="12" height="10" rx="2"/>
+      <rect class="agent-eye" x="2" y="3" width="2" height="2" rx="1"/>
+      <rect class="agent-eye" x="7" y="3" width="2" height="2" rx="1"/>
+      <line x1="6" y1="0" x2="6" y2="-5" stroke="#00ff41" stroke-width="1"/>
+      <circle class="green-bright pulse" cx="6" cy="-7" r="1.5"/>
+      <rect class="agent-body" x="1" y="12" width="10" height="12" rx="2"/>
+      <rect class="agent-body" x="1" y="26" width="4" height="6" rx="1"/>
+      <rect class="agent-body" x="7" y="26" width="4" height="6" rx="1"/>
+      <text class="mono" x="6" y="44" text-anchor="middle" font-size="6">AG-06</text>
+    </g>
+  </g>
+
+  <!-- Orbiting particles around center text -->
+  <g transform="translate(400, 100)">
+    <circle class="green-bright orbiter" cx="0" cy="0" r="3"/>
+    <circle class="green-bright orbiter2" cx="0" cy="0" r="2"/>
+  </g>
+
+  <!-- Corner decorations -->
+  <text class="mono pulse" x="10" y="195" font-size="8">[DIRECTIVE_ZERO]</text>
+  <text class="mono pulse-delay" x="670" y="195" font-size="8">[FALLBACK:NULL]</text>
+  
+  <!-- Cursor blink bottom center -->
+  <text class="mono" x="350" y="155">root@sayn:~$</text>
+  <rect class="green cursor-blink" x="450" y="145" width="6" height="12" rx="1"/>
+</svg>

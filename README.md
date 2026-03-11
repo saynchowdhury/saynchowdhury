@@ -141,7 +141,9 @@ NO PLAN B. I WILL MAKE THIS HAPPEN.
 ```
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/saynchowdhury/saynchowdhury/main/assets/no_plan_b.jpg" width="50%" alt="Directive 0" title="[THE FINAL COMMITMENT]"/>
+<img src="https://raw.githubusercontent.com/saynchowdhury/saynchowdhury/main/assets/no_plan_b_banner.svg" width="100%" alt="NO PLAN B" />
+<br>
+<img src="https://raw.githubusercontent.com/saynchowdhury/saynchowdhury/main/assets/no_plan_b.png" width="50%" alt="Directive 0" title="[THE FINAL COMMITMENT]"/>
 </div>
 
 ---
