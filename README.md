@@ -7,54 +7,18 @@
 
 <br>
 
-<!-- Retro terminal frame with ASCII self-portrait -->
-
-```text
-╔══════════════════════════════════════════════════════════════════════════╗
-║  ┌──────────────────────────────────────────────────────────────────┐   ║
-║  │           ░▒▓ SAYN://TERMINAL v2.0 — [AGENTIC OS] ▓▒░          │   ║
-║  ├──────────────────────────────────────────────────────────────────┤   ║
-║  │                                                                  │   ║
-║  │                          ▄▄▄▄▄▄▄▄▄▄▄                            │   ║
-║  │                      ▄█████████████████▄                         │   ║
-║  │                    ▄███▓▓▓▓▓▓▓▓▓▓▓▓▓████▄                       │   ║
-║  │                   ███▓▓▓▓▒▒▒▒▒▒▒▒▓▓▓▓▓███                       │   ║
-║  │                  ██▓▓▒▒░░░░░░░░░░░░▒▒▓▓██                       │   ║
-║  │                 ██▓▒░░░░░░░░░░░░░░░░░▒▓██                       │   ║
-║  │                ██▓▒░░░░╔══════════╗░░░▒▓██                      │   ║
-║  │                ██▓▒░░░░║ ◉      ◉ ║░░░▒▓██                      │   ║
-║  │                ██▓▒░░░░╚══╤════╤══╝░░░▒▓██                      │   ║
-║  │                ██▓▒░░░░░░░│    │░░░░░░▒▓██                      │   ║
-║  │                ██▓▒░░░░░░░╰────╯░░░░░░▒▓██                      │   ║
-║  │                ██▓▒░░░░░░░╭────╮░░░░░░▒▓██                      │   ║
-║  │                ██▓▒░░░░░░░╰────╯░░░░░░▒▓██                      │   ║
-║  │                 ██▓▒░░░░░░░░░░░░░░░░░▒▓██                       │   ║
-║  │                ▓███▓▒░░░░░░░░░░░░░░░▒▓███▒                      │   ║
-║  │              ▓██▓▓▓██▓▒░░░░░░░░░░░▒▓██▓▓▓██▒                    │   ║
-║  │            ▓██▓▒░░▒▓██████████████████▓▒░░▒▓██▒                  │   ║
-║  │           ██▓▒░░░░░░▒▓████████████▓▒░░░░░░▒▓██                  │   ║
-║  │          ██▓▒░░░░░░░░░░▒▒▓▓▓▓▓▓▒▒░░░░░░░░░▒▓██                 │   ║
-║  │          ██▓████████████████████████████████▓██                  │   ║
-║  │          ██▓▒ ░░░DENIM░░░░░░░░░░░░░JACKET░ ▒▓██                 │   ║
-║  │          ██▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓██                 │   ║
-║  │                                                                  │   ║
-║  │  > IDENTITY: Sayan Chowdhury                                    │   ║
-║  │  > TITLE   : <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=3000&pause=500&color=00FF41&vCenter=true&repeat=true&width=400&lines=Father+of+Agentic+Economics;Architect+of+the+Swarm;Post-Human+Market+Maker" alt="Typing SVG" /> │   ║
-║  │  > STATUS  : <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=2000&pause=500&color=00FF41&vCenter=true&repeat=true&width=400&lines=Compiling+Reality...;Constructing+Monoliths...;Bypassing+Constraints..." alt="Typing SVG" /> │   ║
-║  │  > SIGNAL  : ████████████████████░░░░ 83% AGENTIC               │   ║
-║  │                                                                  │   ║
-║  └──────────────────────────────────────────────────────────────────┘   ║
-╚══════════════════════════════════════════════════════════════════════════╝
-```
+<!-- Animated Terminal Widget -->
+<img src="https://raw.githubusercontent.com/saynchowdhury/saynchowdhury/main/assets/terminal.svg" width="100%" alt="SAYN://TERMINAL v2.0" />
 
 <br>
 
-### `> EXECUTE TERMINAL DIRECTLY IN YOUR SHELL`
+### `> EXECUTE THIS TERMINAL IN YOUR SHELL`
 ```bash
 npx saynchowdhury
 ```
 
 </div>
+
 
 ---
 

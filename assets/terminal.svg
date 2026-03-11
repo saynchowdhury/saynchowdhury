@@ -1,0 +1,337 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="680" viewBox="0 0 820 680">
+  <style>
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(680px); }
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      92% { opacity: 1; }
+      93% { opacity: 0.8; }
+      94% { opacity: 1; }
+    }
+    @keyframes title1 {
+      0%, 30% { opacity: 1; }
+      33%, 63% { opacity: 0; }
+      66%, 96% { opacity: 0; }
+      99%, 100% { opacity: 0; }
+    }
+    @keyframes title2 {
+      0%, 30% { opacity: 0; }
+      33%, 63% { opacity: 1; }
+      66%, 96% { opacity: 0; }
+      99%, 100% { opacity: 0; }
+    }
+    @keyframes title3 {
+      0%, 30% { opacity: 0; }
+      33%, 63% { opacity: 0; }
+      66%, 96% { opacity: 1; }
+      99%, 100% { opacity: 0; }
+    }
+    @keyframes status1 {
+      0%, 30% { opacity: 1; }
+      33%, 63% { opacity: 0; }
+      66%, 96% { opacity: 0; }
+      99%, 100% { opacity: 0; }
+    }
+    @keyframes status2 {
+      0%, 30% { opacity: 0; }
+      33%, 63% { opacity: 1; }
+      66%, 96% { opacity: 0; }
+      99%, 100% { opacity: 0; }
+    }
+    @keyframes status3 {
+      0%, 30% { opacity: 0; }
+      33%, 63% { opacity: 0; }
+      66%, 96% { opacity: 1; }
+      99%, 100% { opacity: 0; }
+    }
+    @keyframes signal-pulse {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+    @keyframes typewriter-title1 {
+      0% { width: 0; }
+      5% { width: 0; }
+      28% { width: 290px; }
+      30% { width: 290px; }
+      33% { width: 0; }
+      100% { width: 0; }
+    }
+    @keyframes typewriter-title2 {
+      0%, 33% { width: 0; }
+      36% { width: 0; }
+      58% { width: 230px; }
+      63% { width: 230px; }
+      66% { width: 0; }
+      100% { width: 0; }
+    }
+    @keyframes typewriter-title3 {
+      0%, 66% { width: 0; }
+      69% { width: 0; }
+      91% { width: 260px; }
+      96% { width: 260px; }
+      99% { width: 0; }
+      100% { width: 0; }
+    }
+    @keyframes typewriter-status1 {
+      0% { width: 0; }
+      5% { width: 0; }
+      28% { width: 210px; }
+      30% { width: 210px; }
+      33% { width: 0; }
+      100% { width: 0; }
+    }
+    @keyframes typewriter-status2 {
+      0%, 33% { width: 0; }
+      36% { width: 0; }
+      58% { width: 260px; }
+      63% { width: 260px; }
+      66% { width: 0; }
+      100% { width: 0; }
+    }
+    @keyframes typewriter-status3 {
+      0%, 66% { width: 0; }
+      69% { width: 0; }
+      91% { width: 250px; }
+      96% { width: 250px; }
+      99% { width: 0; }
+      100% { width: 0; }
+    }
+    .terminal-bg {
+      fill: #0a0a0a;
+      rx: 12;
+      ry: 12;
+    }
+    .terminal-border {
+      fill: none;
+      stroke: #00ff41;
+      stroke-width: 2;
+      rx: 12;
+      ry: 12;
+      filter: drop-shadow(0 0 6px rgba(0, 255, 65, 0.3));
+    }
+    .titlebar {
+      fill: #111111;
+      rx: 12;
+      ry: 12;
+    }
+    .titlebar-cover {
+      fill: #111111;
+    }
+    .dot-red { fill: #ff5f57; }
+    .dot-yellow { fill: #febc2e; }
+    .dot-green { fill: #28c840; }
+    .terminal-title {
+      fill: #00ff41;
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', 'Consolas', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      text-anchor: middle;
+      letter-spacing: 1px;
+    }
+    .ascii-text {
+      fill: #00ff41;
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', 'Consolas', monospace;
+      font-size: 11px;
+      animation: flicker 8s infinite;
+    }
+    .label-text {
+      fill: #00ff41;
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', 'Consolas', monospace;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .value-text {
+      fill: #00ff41;
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', 'Consolas', monospace;
+      font-size: 12px;
+    }
+    .cursor {
+      fill: #00ff41;
+      animation: blink 1s step-end infinite;
+    }
+    .scanline-bar {
+      fill: rgba(0, 255, 65, 0.03);
+      animation: scanline 6s linear infinite;
+    }
+    .signal-bar-on {
+      fill: #00ff41;
+      animation: signal-pulse 2s ease-in-out infinite;
+    }
+    .signal-bar-off {
+      fill: #1a3a1a;
+    }
+    .title-cycle-1 { animation: title1 9s infinite; }
+    .title-cycle-2 { animation: title2 9s infinite; }
+    .title-cycle-3 { animation: title3 9s infinite; }
+    .status-cycle-1 { animation: status1 9s infinite; }
+    .status-cycle-2 { animation: status2 9s infinite; }
+    .status-cycle-3 { animation: status3 9s infinite; }
+    .tw-title-1 { animation: typewriter-title1 9s steps(30, end) infinite; overflow: hidden; }
+    .tw-title-2 { animation: typewriter-title2 9s steps(24, end) infinite; overflow: hidden; }
+    .tw-title-3 { animation: typewriter-title3 9s steps(26, end) infinite; overflow: hidden; }
+    .tw-status-1 { animation: typewriter-status1 9s steps(22, end) infinite; overflow: hidden; }
+    .tw-status-2 { animation: typewriter-status2 9s steps(26, end) infinite; overflow: hidden; }
+    .tw-status-3 { animation: typewriter-status3 9s steps(25, end) infinite; overflow: hidden; }
+    .glow {
+      filter: drop-shadow(0 0 4px rgba(0, 255, 65, 0.5));
+    }
+    .dim { opacity: 0.5; }
+    .bright { 
+      fill: #33ff66;
+      filter: drop-shadow(0 0 2px rgba(0, 255, 65, 0.8));
+    }
+  </style>
+
+  <defs>
+    <clipPath id="clip-title-1"><rect x="0" y="0" class="tw-title-1" height="20"/></clipPath>
+    <clipPath id="clip-title-2"><rect x="0" y="0" class="tw-title-2" height="20"/></clipPath>
+    <clipPath id="clip-title-3"><rect x="0" y="0" class="tw-title-3" height="20"/></clipPath>
+    <clipPath id="clip-status-1"><rect x="0" y="0" class="tw-status-1" height="20"/></clipPath>
+    <clipPath id="clip-status-2"><rect x="0" y="0" class="tw-status-2" height="20"/></clipPath>
+    <clipPath id="clip-status-3"><rect x="0" y="0" class="tw-status-3" height="20"/></clipPath>
+  </defs>
+
+  <!-- Terminal Window -->
+  <rect class="terminal-bg" x="2" y="2" width="816" height="676"/>
+  <rect class="terminal-border" x="2" y="2" width="816" height="676"/>
+  
+  <!-- Title Bar -->
+  <rect class="titlebar" x="2" y="2" width="816" height="36"/>
+  <rect class="titlebar-cover" x="2" y="26" width="816" height="12"/>
+  <line x1="2" y1="38" x2="818" y2="38" stroke="#00ff41" stroke-width="1" opacity="0.5"/>
+  <circle class="dot-red" cx="22" cy="20" r="6"/>
+  <circle class="dot-yellow" cx="42" cy="20" r="6"/>
+  <circle class="dot-green" cx="62" cy="20" r="6"/>
+  <text class="terminal-title" x="410" y="24">SAYN://TERMINAL v2.0 — [AGENTIC OS]</text>
+
+  <!-- Scanline effect -->
+  <rect class="scanline-bar" x="2" y="-20" width="816" height="20"/>
+  
+  <!-- ASCII Self-Portrait -->
+  <text class="ascii-text glow" x="240" y="76">▄▄▄▄▄▄▄▄▄▄▄</text>
+  <text class="ascii-text glow" x="210" y="92">▄█████████████████▄</text>
+  <text class="ascii-text glow" x="195" y="108">▄███▓▓▓▓▓▓▓▓▓▓▓▓▓████▄</text>
+  <text class="ascii-text glow" x="188" y="124">███▓▓▓▓▒▒▒▒▒▒▒▒▓▓▓▓▓███</text>
+  <text class="ascii-text glow" x="181" y="140">██▓▓▒▒░░░░░░░░░░░░▒▒▓▓██</text>
+  <text class="ascii-text glow" x="178" y="156">██▓▒░░░░░░░░░░░░░░░░░▒▓██</text>
+  <text class="ascii-text glow" x="171" y="172">██▓▒░░░░╔══════════╗░░░▒▓██</text>
+  <text class="ascii-text bright" x="171" y="188">██▓▒░░░░║ ◉      ◉ ║░░░▒▓██</text>
+  <text class="ascii-text glow" x="171" y="204">██▓▒░░░░╚══╤════╤══╝░░░▒▓██</text>
+  <text class="ascii-text glow" x="171" y="220">██▓▒░░░░░░░│    │░░░░░░▒▓██</text>
+  <text class="ascii-text glow" x="171" y="236">██▓▒░░░░░░░╰────╯░░░░░░▒▓██</text>
+  <text class="ascii-text glow" x="171" y="252">██▓▒░░░░░░░╭────╮░░░░░░▒▓██</text>
+  <text class="ascii-text glow" x="171" y="268">██▓▒░░░░░░░╰────╯░░░░░░▒▓██</text>
+  <text class="ascii-text glow" x="178" y="284">██▓▒░░░░░░░░░░░░░░░░░▒▓██</text>
+  <text class="ascii-text glow" x="171" y="300">▓███▓▒░░░░░░░░░░░░░░░▒▓███▒</text>
+  <text class="ascii-text glow" x="155" y="316">▓██▓▓▓██▓▒░░░░░░░░░░░▒▓██▓▓▓██▒</text>
+  <text class="ascii-text glow" x="141" y="332">▓██▓▒░░▒▓██████████████████▓▒░░▒▓██▒</text>
+  <text class="ascii-text glow" x="135" y="348">██▓▒░░░░░░▒▓████████████▓▒░░░░░░▒▓██</text>
+  <text class="ascii-text glow" x="131" y="364">██▓▒░░░░░░░░░░▒▒▓▓▓▓▓▓▒▒░░░░░░░░░▒▓██</text>
+  <text class="ascii-text glow" x="131" y="380">██▓████████████████████████████████▓██</text>
+  <text class="ascii-text dim" x="131" y="396">██▓▒ ░░░DENIM░░░░░░░░░░░░░JACKET░ ▒▓██</text>
+  <text class="ascii-text glow" x="131" y="412">██▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓██</text>
+
+  <!-- Separator line -->
+  <line x1="40" y1="435" x2="780" y2="435" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- IDENTITY line -->
+  <text class="label-text glow" x="60" y="465">&gt; IDENTITY:</text>
+  <text class="value-text" x="185" y="465">Sayan Chowdhury</text>
+
+  <!-- TITLE line with animated cycling text -->
+  <text class="label-text glow" x="60" y="490">&gt; TITLE   :</text>
+  
+  <g transform="translate(185, 477)">
+    <g clip-path="url(#clip-title-1)">
+      <text class="value-text title-cycle-1" x="0" y="13">Father of Agentic Economics</text>
+    </g>
+    <g clip-path="url(#clip-title-2)">
+      <text class="value-text title-cycle-2" x="0" y="13">Architect of the Swarm</text>
+    </g>
+    <g clip-path="url(#clip-title-3)">
+      <text class="value-text title-cycle-3" x="0" y="13">Post-Human Market Maker</text>
+    </g>
+  </g>
+  
+  <!-- Blinking cursor for title -->
+  <rect class="cursor" x="490" y="480" width="8" height="14" rx="1"/>
+
+  <!-- STATUS line with animated cycling text -->
+  <text class="label-text glow" x="60" y="515">&gt; STATUS  :</text>
+  
+  <g transform="translate(185, 502)">
+    <g clip-path="url(#clip-status-1)">
+      <text class="value-text status-cycle-1" x="0" y="13">Compiling Reality...</text>
+    </g>
+    <g clip-path="url(#clip-status-2)">
+      <text class="value-text status-cycle-2" x="0" y="13">Constructing Monoliths...</text>
+    </g>
+    <g clip-path="url(#clip-status-3)">
+      <text class="value-text status-cycle-3" x="0" y="13">Bypassing Constraints...</text>
+    </g>
+  </g>
+  
+  <!-- Blinking cursor for status -->
+  <rect class="cursor" x="430" y="505" width="8" height="14" rx="1"/>
+
+  <!-- SIGNAL bar -->
+  <text class="label-text glow" x="60" y="545">&gt; SIGNAL  :</text>
+  
+  <!-- Signal bars (animated) -->
+  <rect class="signal-bar-on" x="185" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="200" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="215" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="230" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="245" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="260" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="275" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="290" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="305" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="320" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="335" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="350" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="365" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="380" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="395" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="410" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="425" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="440" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="455" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-on" x="470" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-off" x="485" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-off" x="500" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-off" x="515" y="533" width="12" height="14" rx="1"/>
+  <rect class="signal-bar-off" x="530" y="533" width="12" height="14" rx="1"/>
+  
+  <text class="value-text dim" x="555" y="545">83% AGENTIC</text>
+
+  <!-- Bottom separator -->
+  <line x1="40" y1="565" x2="780" y2="565" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Footer -->
+  <text class="value-text dim" x="60" y="590">root@sayn:~$ </text>
+  <text class="value-text" x="174" y="590">./execute_will.sh</text>
+  <rect class="cursor" x="304" y="578" width="8" height="14" rx="1"/>
+
+  <!-- Bottom system info bar -->
+  <rect fill="#111111" x="2" y="616" width="816" height="30"/>
+  <text class="value-text dim" x="20" y="636">[MEM: 99.7%]</text>
+  <text class="value-text dim" x="160" y="636">[CPU: OVERCLOCKED]</text>
+  <text class="value-text dim" x="370" y="636">[NET: MESH_ACTIVE]</text>
+  <text class="value-text dim" x="570" y="636">[AGENTS: 847 ONLINE]</text>
+  
+  <!-- Ambient glow overlay -->
+  <rect x="2" y="2" width="816" height="676" rx="12" ry="12" fill="url(#ambient)" opacity="0.05"/>
+  <defs>
+    <radialGradient id="ambient" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#00ff41"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+</svg>
