@@ -49,6 +49,11 @@
 
 <br>
 
+### `> EXECUTE TERMINAL DIRECTLY IN YOUR SHELL`
+```bash
+npx saynchowdhury
+```
+
 </div>
 
 ---
