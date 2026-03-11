@@ -1,10 +1,7 @@
 #!/usr/bin/env node
 
 const chalk = require('chalk');
-
-async function loadLogUpdate() {
-    return (await import('log-update')).default;
-}
+const logUpdate = require('log-update');
 
 const C_GREEN = chalk.hex('#00FF41');
 const C_DARK_GREEN = chalk.hex('#008F11');
@@ -120,8 +117,6 @@ async function cycleAnimations(titleIdx, statusIdx, currentLines) {
 }
 
 async function boot() {
-    logUpdate = await loadLogUpdate();
-
     console.clear();
     logUpdate("SAYN://TERMINAL INITIATING...");
     await sleep(500);
