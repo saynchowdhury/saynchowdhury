@@ -1,0 +1,35 @@
+{
+  "name": "saynchowdhury",
+  "version": "2.0.0",
+  "description": "The Terminal OS for the Father of Agentic Economics",
+  "main": "sayn.js",
+  "bin": {
+    "sayn": "./sayn.js",
+    "saynchowdhury": "./sayn.js"
+  },
+  "scripts": {
+    "start": "node sayn.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saynchowdhury/saynchowdhury.git"
+  },
+  "keywords": [
+    "agentic",
+    "economics",
+    "artificial-intelligence",
+    "cli"
+  ],
+  "author": "Sayan Chowdhury",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/saynchowdhury/saynchowdhury/issues"
+  },
+  "homepage": "https://github.com/saynchowdhury/saynchowdhury#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "log-update": "^7.2.0"
+  }
+}
