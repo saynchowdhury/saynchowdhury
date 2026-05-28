@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/saynchowdhury/saynchowdhury/main/manifesto.jpg" width="100%" alt="manifesto"/>
+
+<br/><br/>
+
 <svg width="840" height="190" viewBox="0 0 840 190" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="hBg" x1="0" y1="0" x2="840" y2="190" gradientUnits="userSpaceOnUse">
@@ -62,12 +66,6 @@
   <img src="https://img.shields.io/badge/foundery.space-0a0a0f?style=for-the-badge&logo=rocket&logoColor=a78bfa" alt="Foundery"/>
 </a>
 
-</div>
-
----
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/saynchowdhury/saynchowdhury/main/manifesto.jpg" width="460" alt="F*CK 'EM — I got dreams to chase"/>
 </div>
 
 ---
@@ -164,30 +162,6 @@ Agentic content pipeline for LinkedIn + YouTube. Automated orchestration with st
 
 ---
 
-## On Collecting AI Subdomains
-
-```
-Most people use AI.
-I study its substructure.
-
-While others prompt,
-I'm reading papers on cognitive architectures.
-
-While others wrap APIs,
-I'm thinking about inference graphs,
-agent memory hierarchies,
-and what happens when agents
-start talking to each other
-without a human in the loop.
-
-I collect subdomains of AI
-the way a cartographer maps unmapped territory —
-not because someone asked me to,
-but because the map doesn't exist yet.
-```
-
----
-
 ## Skills
 
 <div align="center">
@@ -214,8 +188,4 @@ but because the map doesn't exist yet.
 
 </div>
 
----
 
-<div align="center">
-<sub>architecture > wrappers &nbsp;·&nbsp; depth > breadth &nbsp;·&nbsp; conviction > consensus</sub>
-</div>
