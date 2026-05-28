@@ -74,6 +74,8 @@ I'm an agentic researcher and entrepreneur based in India. I think in systems â€
 
 I'm also a brand strategist by taste. I believe how you present an idea is as important as the idea itself. That conviction runs through everything I make.
 
+Currently building [foundery.space](https://foundery.space/) â€” a community-ranked directory for founders, researchers, and builders navigating fellowships, grants, accelerators, and residencies. If you're ambitious and building something real, it's for you.
+
 ---
 
 ## Research Interests
