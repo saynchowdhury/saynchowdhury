@@ -38,7 +38,7 @@
   <text x="420" y="76" font-family="'SF Pro Display',-apple-system,BlinkMacSystemFont,sans-serif" font-size="34" font-weight="800" fill="#f1f5f9" text-anchor="middle" letter-spacing="2" filter="url(#hGlow)">SAYAN CHOWDHURY</text>
   <text x="420" y="108" font-family="'SF Pro Text',-apple-system,sans-serif" font-size="12.5" fill="#a78bfa" text-anchor="middle" letter-spacing="3.5" font-weight="600" filter="url(#hGlow2)">AGENTIC RESEARCHER  ·  ENTREPRENEUR  ·  BRAND STRATEGIST</text>
   <line x1="220" y1="122" x2="620" y2="122" stroke="url(#hBorder)" stroke-width="0.6" opacity="0.45"/>
-  <text x="420" y="142" font-family="'SF Pro Text',-apple-system,sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="2">thinks in architecture  ·  not wrappers  ·  deep tech  ·  not surface layer</text>
+  <text x="420" y="142" font-family="'SF Pro Text',-apple-system,sans-serif" font-size="11" fill="#64748b" text-anchor="middle" letter-spacing="2">ships infrastructure  ·  not wrappers  ·  deep tech  ·  not surface layer</text>
   <circle cx="36" cy="36" r="3" fill="#a78bfa" opacity="0.5"/>
   <circle cx="804" cy="36" r="3" fill="#22d3ee" opacity="0.5"/>
   <circle cx="36" cy="154" r="3" fill="#22d3ee" opacity="0.5"/>
@@ -85,6 +85,11 @@ Currently building [foundery.space](https://foundery.space/) — a community-ran
 - Writing on [Medium](https://medium.com/@sayanshytech.20) about cognitive architectures and venture building
 - Advising two early-stage AI ventures on agentic systems design
 
+## Let's Connect
+
+Open to conversations about agentic systems, venture building, and deep tech branding.
+[LinkedIn](https://www.linkedin.com/in/sayanchowdhuryai/) · [Email](mailto:sayan@foundery.space)
+
 ---
 
 ## Research Interests
@@ -117,7 +122,7 @@ Currently building [foundery.space](https://foundery.space/) — a community-ran
 <td width="50%" valign="top">
 
 **[foundery.space](https://foundery.space/)**
-Community-ranked directory for ambitious founders, researchers, and builders. Fellowships, grants, accelerators, residencies — all in one place.
+Growing to 500+ founders monthly — the directory for navigating fellowships, grants, and accelerators. Community-ranked, actively shipped.
 
 `TypeScript` · `Open Source` · `Active`
 
@@ -125,7 +130,7 @@ Community-ranked directory for ambitious founders, researchers, and builders. Fe
 <td width="50%" valign="top">
 
 **[GENERATIVE-AGENTS](https://github.com/saynchowdhury/GENERATIVE-AGENTS)**
-Interactive simulation of human behavior. Exploring emergent social dynamics in synthetic environments. Stanford research — extended.
+Extended Stanford's generative agents — simulating emergent social dynamics at scale. Interactive behavior in synthetic environments.
 
 `Python` · `Research` · `Active`
 
@@ -143,7 +148,7 @@ Onboard AI agents autonomously saving satellites from orbital debris. Built at T
 <td width="50%" valign="top">
 
 **[paperclip](https://github.com/saynchowdhury/paperclip)**
-Open-source orchestration for zero-human companies.
+Orchestration layer for zero-human companies. Shipped, documented, in active development.
 
 `TypeScript` · `Infra` · `Active`
 
@@ -153,7 +158,7 @@ Open-source orchestration for zero-human companies.
 <td width="50%" valign="top">
 
 **[Occium Content System](https://github.com/saynchowdhury/Occium-contentsystem-linkedin-yt)**
-Agentic content pipeline for LinkedIn + YouTube. Automated orchestration with standardized metrics.
+Agentic content pipeline processing 50+ posts/month with automated metrics tracking for LinkedIn + YouTube.
 
 `TypeScript` · `Agentic` · `Active`
 
