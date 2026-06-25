@@ -70,11 +70,20 @@
 
 ---
 
-I'm an agentic researcher and entrepreneur based in India. I think in systems — agent harnesses, cognitive architectures, multi-agent orchestration — not in wrappers or surface-level integrations. I have an ADHD builder's mind: I move fast, go deep, and build in public. My work sits at the intersection of deep tech AI and venture building, and I approach both with the same instinct — find the architecture others haven't mapped yet, and build there first.
+Agentic researcher and entrepreneur building at the intersection of deep tech AI and venture creation. Based in India.
 
-I'm also a brand strategist by taste. I believe how you present an idea is as important as the idea itself. That conviction runs through everything I make.
+I design cognitive architectures, orchestrate multi-agent systems, and ship infrastructure for autonomous AI — then write about why it matters. My work spans from research-grade agent harnesses to zero-human company tooling, and I'm equally at home in a whitepaper and a pitch.
+
+I also do brand strategy for deep tech founders who want to sound like humans, not brochures.
 
 Currently building [foundery.space](https://foundery.space/) — a community-ranked directory for founders, researchers, and builders navigating fellowships, grants, accelerators, and residencies. If you're ambitious and building something real, it's for you.
+
+## Currently
+
+- Building [foundery.space](https://foundery.space/) — live, growing, shipping weekly
+- Contributing to agentic infrastructure tooling (stealth mode)
+- Writing on [Medium](https://medium.com/@sayanshytech.20) about cognitive architectures and venture building
+- Advising two early-stage AI ventures on agentic systems design
 
 ---
 
@@ -84,16 +93,16 @@ Currently building [foundery.space](https://foundery.space/) — a community-ran
 
 | Domain | What I'm Actually Exploring |
 |:-------|:----------------------------|
-| 🧠 **Cognitive Architectures** | How agents reason, plan, and maintain memory across long horizons |
-| 🤖 **Multi-Agent Orchestration** | Agent harnesses, swarm intelligence, emergent coordination patterns |
-| 🔬 **Generative Agents** | Interactive simulation of human behavior in synthetic environments |
-| ⚡ **Inference Optimization** | Model serving, speculative decoding, KV-cache, edge inference |
-| 🏗️ **Agentic Infrastructure** | Sandboxes, compute orchestration, auth layers for autonomous agents |
-| 🔭 **Traversal & Screening Agents** | Agents that navigate, filter, and surface signal from noise |
-| 🧬 **Regenerative AI** | Self-evolving systems — agents that improve through interaction |
-| 📐 **Agent Memory Systems** | Episodic, semantic, procedural — how agents remember and forget |
-| 🔬 **Autonomous Research Agents** | AI Scientist, autoresearch, paper-to-agent knowledge pipelines |
-| 🚀 **AI × Entrepreneurship** | Zero-human company infrastructure, agentic venture building |
+| **Cognitive Architectures** | Building memory systems that persist across long-horizon agentic tasks — episodic, semantic, and procedural layers |
+| **Multi-Agent Orchestration** | Designing agent harnesses and swarm coordination protocols for emergent multi-agent behavior |
+| **Generative Agents** | Extending Stanford's generative agents — simulating emergent social dynamics at scale |
+| **Inference Optimization** | Optimizing inference pipelines: speculative decoding, KV-cache management, and edge deployment |
+| **Agentic Infrastructure** | Building the infra primitives — sandboxes, orchestration, and auth — for truly autonomous agents |
+| **Traversal & Screening Agents** | Deploying traversal agents that navigate dense information landscapes and surface signal |
+| **Regenerative AI** | Engineering self-improving agent loops that evolve through repeated interaction |
+| **Agent Memory Systems** | Architecting agent memory systems with principled retention and graceful forgetting |
+| **Autonomous Research Agents** | Building paper-to-agent pipelines that turn research literature into live knowledge systems |
+| **AI × Entrepreneurship** | Building the infrastructure stack for zero-human companies — from orchestration to output |
 
 </div>
 
