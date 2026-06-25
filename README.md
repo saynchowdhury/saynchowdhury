@@ -165,6 +165,15 @@ Agentic content pipeline processing 50+ posts/month with automated metrics track
 </td>
 <td width="50%" valign="top">
 
+**[Fable 5 System Prompt](https://github.com/saynchowdhury/fable-5-system-prompt)**
+A curated system prompt library for AI agents. Optimizing LLM behavior through structured, domain-specific instructions.
+
+`Markdown` · `Open Source` · `Active`
+
+</td></tr>
+<tr>
+<td width="50%" valign="top">
+
 **[VESPER](https://github.com/saynchowdhury/VESPER)**
 22 open PRs. Something is being built here.
 
